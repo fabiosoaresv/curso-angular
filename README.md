@@ -1,27 +1,31 @@
-# Pyhooma
+### Setup
+1. Clone o projeto
+```consoole
+git clone https://github.com/fabiosoaresv/curso-angular.git
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
+2. Copiar os arquivos package.json e serve.js para um outro diretório.
 
-## Development server
+3. Exemplo
+```console
+mkdir ~/course-manager-server
+cp ~/pyhooma/src/assets/server/serve.js ~/course-manager-server
+cp ~/pyhooma/src/assets/server/package.json ~/course-manager-server
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. Instale os pacotes
+```console
+npm install
+```
 
-## Code scaffolding
+5. Inicialize o server
+```console
+node serve.js
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. Em outro terminal inicie o projeto do Angular
+```console
+ng serve
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+7. Abra no navegador: http://localhost:4200
